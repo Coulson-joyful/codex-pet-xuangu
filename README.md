@@ -1,14 +1,35 @@
-# Codex Pet: 玄骨
+# 玄骨 · Codex 动态宠物
 
-用于 Codex 的 v2 动态宠物包。
+玄骨是一个蓝衣、黑色长发的小人，待机时手里有一团青蓝色灵火。这个仓库保存他的 Codex v2 动态宠物素材和检查记录。
 
-## 内容
-
-- `assets/spritesheet.webp`：11 行、8 列的 v2 精灵图集。
-- `pet.json`：宠物清单，含 `spriteVersionNumber: 2`。
-- `qa/`：图集和透明边缘验证报告，以及视线方向质检图。
-- `玄骨宠物.md`：角色、动作与验证说明。
+图集包含待机、左右移动、招手、跳跃、失败、等待、处理和审阅，共 9 组标准动画，另有 16 个视线方向。
 
 ## 安装
 
-将 `pet.json` 与 `assets/spritesheet.webp` 复制到 `~/.codex/pets/xuangu/`，并将精灵图重命名为 `spritesheet.webp`。
+在仓库根目录运行：
+
+```bash
+bash install.sh
+```
+
+脚本把 `pet.json` 和图集复制到 `${CODEX_HOME:-$HOME/.codex}/pets/xuangu/`。如果这个目录已经有同名文件，会被覆盖。
+
+也可以手动复制。最终目录应是：
+
+```text
+~/.codex/pets/xuangu/
+├── pet.json
+└── spritesheet.webp
+```
+
+注意：仓库中的图集在 `assets/spritesheet.webp`，安装后应直接放在宠物目录下，而不是再套一层 `assets/`。
+
+## 仓库里的文件
+
+- `pet.json`：名称、图集路径和 `spriteVersionNumber: 2`。
+- `assets/spritesheet.webp`：1536 × 2288 图集，8 列、11 行，单格 192 × 208。
+- `install.sh`：本地复制脚本。
+- `qa/`：透明边缘、去绿边检查报告，以及视线方向检查图。
+- [玄骨宠物.md](玄骨宠物.md)：角色、动作与制作记录。
+
+检查记录针对这份素材，不代表每个版本的客户端都已重新验证。
