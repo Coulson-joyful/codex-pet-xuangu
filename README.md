@@ -4,7 +4,8 @@
 
 图集包含待机、左右移动、招手、跳跃、失败、等待、处理和审阅，共 9 组标准动画，另有 16 个视线方向，满足codex桌面宠物设定要求后才可以使用。
 
-<img width="190" height="231" alt="image" src="https://github.com/user-attachments/assets/51bd02ab-d795-44b7-909f-434b0d607e3f" />
+<img width="168" height="203" alt="image" src="https://github.com/user-attachments/assets/8ee4d69d-01c6-4ae3-ba86-6e8456bfa585" />
+
 
 ## 安装
 
